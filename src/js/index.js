@@ -1,4 +1,4 @@
-import chipsAndBeans from './stuff.json'
+
 import { DataManager } from './dataManager';
 import { Loader } from './loader.js';
 
@@ -14,7 +14,7 @@ export class Index {
   
     loadData() {
       this.loader = new Loader();
-      const data = this.loader.load('/src/js/stuff.json').then( (response) => {
+      const data = this.loader.load('/dist/stuff.json').then( (response) => {
         console.log(response)
         this.data = response;
       }).catch((error) => {
