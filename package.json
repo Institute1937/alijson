@@ -1,0 +1,15 @@
+{
+  "name": "jsn-playground",
+  "version": "1.0.0",
+  "description": "three went down to the sea",
+  "main": "main.js",
+  "scripts": {
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+  },
+  "author": "Ron Plonker",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
