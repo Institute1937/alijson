@@ -14,12 +14,10 @@ export class Index {
   
     loadData() {
       this.loader = new Loader();
-      const data = this.loader.load('/dist/stuff.json').then( (response) => {
-        console.log(response)
-        this.data = response;
-      }).catch((error) => {
-        console.log('there has been an error');
-      });
+      const data = this.loader.load('/assets/stuff.json')
+        .then(response => response.json())
+        .then(json => console.log(json))
+
     }
   
     renderTableToDom(element, data) {
